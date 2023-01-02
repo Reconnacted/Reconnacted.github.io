@@ -1,0 +1,117 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-style: italic;
+    background: #333;
+    color: white;
+    font-family: sans-serif;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7)
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+}
+
+.section {
+    text-align: center;
+    position: relative;
+}
+
+.sectionContent {
+    position: absolute; 
+    top: 0; 
+    margin-top: 10%;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    text-decoration: none;
+}
+
+section h1 {
+    font-size: 4rem;
+
+}
+
+section p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+/* Section images */
+
+.sectionImage {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(212, 0, 255);
+    margin: auto;
+    display: block;
+
+}
+
+li a:hover::after {
+    width: 100%;
+    transition: 0.2s linear;
+}    
+
+
+
+
