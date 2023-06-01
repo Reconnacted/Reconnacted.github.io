@@ -8,6 +8,14 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: white
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -112,6 +120,56 @@ li a:hover::after {
     transition: 0.2s linear;
 }    
 
+.buttons {
+    width: 500px;
 
+}
+
+.mail-button {  
+    float: left;
+    font-size: bold;
+    padding: 10px 25px;
+    background-color: #333;
+    border: black;
+    border-width: bold;
+    width: 100px;
+    border-radius: 20px; 
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(224, 83, 182) 50%, rgb(31, 31, 31) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+
+.mail-button:hover {  
+    background-position: left bottom;
+}
+
+
+.call-button {
+    font-size: bold;
+    float: right;
+    padding: 10px 25px;
+    background-color: #333;
+    border: black;
+    border-width: bold;
+    width: 100px;
+    border-radius: 20px; 
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(224, 83, 182) 50%, rgb(31, 31, 31) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    font-style: normal;
+    margin-top: 100px;
+
+}
+
+.call-button:hover {  
+    background-position: left bottom;
+}
 
 
